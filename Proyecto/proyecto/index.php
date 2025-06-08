@@ -1,0 +1,471 @@
+<?php include 'php/contador.php'; ?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsgn43JopCj4roIXAm_d3N4oPv0vK0xPI&callback=initMap" async defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="menu container">
+
+            <img class="logo-1" src="img/garage.svg" alt="">
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Contáctenos</a></li>
+                    </ul>
+                </div>
+                <img class="logo-2" src="img/garage.svg" alt="">
+                <div class="menu-2">
+                    <ul>
+                        <li><a href="#">Horario</a></li>
+                    </ul>
+                    <div class="socials">
+                        <a href="#">
+                            <div class="social">
+                                <img src="img/s1.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="img/s2.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="img/s3.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="header-content container">
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Garage Style</h1>
+                                <p>
+                                    ¡Bienvenido!
+                                    Si estas buscando soluciones creativas para tu negocio, quedate.
+                                    Diseño gráfico en Bogotá
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-1">Comprar</a>
+                                    <a href="#" class="btn-1">Cotizar</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="img/1slider.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Avisos publicitarios</h1>
+                                <p>
+                                    Creamos marcas memorables. Logotipos, manuales de marca y papelería corporativa.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-1">Comprar</a>
+                                    <a href="#" class="btn-1">Cotizar</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="img/2slider.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Estampados</h1>
+                                <p>
+                                    Personaliza tus prendas.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-1">Comprar</a>
+                                    <a href="#" class="btn-1">Cotizar</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="img/3slider.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="products">
+        <div class="tabs container">
+            <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
+            <label for="tab1">Pendones y banners</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="img/1food.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Producto</h4>
+                                    <p>calidad premium</p>
+                                    <span class="price">$</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="img/2food.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Producto</h4>
+                                    <p>calidad premium</p>
+                                    <span class="price">$</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="img/3food.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Producto</h4>
+                                    <p>calidad premium</p>
+                                    <span class="price">$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <input type="radio" name="tabs" id="tab2" checked="checked" class="tabInput" value="2">
+            <label for="tab2">Estampados</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="img/4food.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Producto</h4>
+                                    <p>calidad premium</p>
+                                    <span class="price">$</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="img/5food.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Producto</h4>
+                                    <p>calidad premium</p>
+                                    <span class="price">$</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="img/6food.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Producto</h4>
+                                    <p>calidad premium</p>
+                                    <span class="price">$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <input type="radio" name="tabs" id="tab3" checked="checked" class="tabInput" value="3">
+            <label for="tab3">Variedad</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="img/7food.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Producto</h4>
+                                    <p>calidad premium</p>
+                                    <span class="price">$</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="img/8food.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Producto</h4>
+                                    <p>calidad premium</p>
+                                    <span class="price">$</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="img/9food.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Producto</h4>
+                                    <p>calidad premium</p>
+                                    <span class="price">$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align:center; margin: 40px;">
+            <button onclick="iniciarEncuesta()" style="padding: 10px 20px; font-size: 18px;">
+                ¡Haz clic para participar en la encuesta!
+            </button>
+        </div>
+
+    </main>
+
+    <section class="info container">
+        <div class="info-img">
+            <img src="img/1info.png" alt="">
+        </div>
+        <div class="info-txt">
+            <h2>¿Por qué elegirnos?</h2>
+            <p>Somos un equipo apasionado por el diseño y la comunicación visual. Nuestro trabajo busca destacar la identidad única de cada cliente.
+            </p>
+            <a href="#" class="btn-2">Mas información</a>
+        </div>
+    </section>
+
+    <section class="horario">
+        <div class="horario-info container">
+            <h2>Horario</h2>
+            <div class="horario-txt">
+                <div class="txt">
+                    <h4>Dirección</h4>
+                    <p>
+                        Calle 132d #154b - 05
+                    </p>
+                    <p>
+                        Suba, Bogotá, Cundinamarca
+                    </p>
+                </div>
+                <div class="txt">
+                    <h4>Horario</h4>
+                    <p>
+                        Lunes a Viernes : 9am - 9am
+                    </p>
+                    <p>
+                        Sabado y Domingo : 10am - 7pm
+                    </p>
+                </div>
+                <div class="txt">
+                    <h4>Telefono</h4>
+                    <p>
+                        314 334 6552
+
+                    </p>
+                    <p>
+                        322 391 6631
+                    </p>
+                </div>
+                <div class="txt">
+                    <h4>Redes Sociales</h4>
+                    <div class="socials">
+                        <a href="#">
+                            <div class="social">
+                                <img src="img/s1.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="img/s2.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="img/s3.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="map" style="width: 100%; height: 500px;"></div>
+    </section>
+
+    <div style="text-align: center; margin: 20px;">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=4.742006,-74.125244" target="_blank" class="btn-2">
+            ¿Cómo llegar?
+        </a>
+    </div>
+
+
+    <footer class="footer container">
+        <img class="logo-2" src="img/garage.svg" alt="">
+        <div class="links">
+            <h4>Servicios</h4>
+            <ul>
+                <li><a href="#">Identidad visual</a></li>
+                <li><a href="#">Diseño</a></li>
+                <li><a href="#">Publicidad</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Enlaces</h4>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>lorem</h4>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Redes</h4>
+            <div class="socials">
+                <a href="#">
+                    <div class="social">
+                        <img src="img/s1.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social">
+                        <img src="img/s2.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social">
+                        <img src="img/s3.svg" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="btnSubir" title="Volver arriba">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+    function initMap() {
+        const ubicacion = { lat: 4.742006, lng: -74.125244 };
+
+        const estiloMapa = [
+            {
+                "elementType": "geometry",
+                "stylers": [{ "color": "#1d2c4d" }]
+            },
+            {
+                "elementType": "labels.text.fill",
+                "stylers": [{ "color": "#8ec3b9" }]
+            },
+            {
+                "elementType": "labels.text.stroke",
+                "stylers": [{ "color": "#1a3646" }]
+            },
+            {
+                "featureType": "road",
+                "elementType": "geometry",
+                "stylers": [{ "color": "#304a7d" }]
+            }
+        ];
+
+        const mapa = new google.maps.Map(document.getElementById("map"), {
+            zoom: 15,
+            center: ubicacion,
+            styles: estiloMapa,
+        });
+
+        const marcador = new google.maps.Marker({
+            position: ubicacion,
+            map: mapa,
+            title: "Garage Style",
+        });
+    }
+    </script>
+    
+    <a href="https://wa.me/573143346552" class="whatsapp-float" target="_blank" title="Chatea con nosotros por WhatsApp">
+        <img src="img/WhatsApp.png" alt="WhatsApp" />
+    </a>
+
+
+</body>
+
+</html>
